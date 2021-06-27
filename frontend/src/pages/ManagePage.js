@@ -26,7 +26,7 @@ const ManagePage = () => {
   }
 
   const handleDelete=(id)=>{
-    axios.delete(`http://letto-ecommerce.herokuapp.com/api/products/api/products/delete/${id}`,
+    axios.delete(`http://127.0.0.1:8000/api/products/delete/${id}`,
       {headers: {"Authorization" : "Bearer "+ userInfo.token}})
       .then(()=>{
         window.location.reload()

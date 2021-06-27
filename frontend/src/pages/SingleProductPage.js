@@ -43,7 +43,7 @@ const SingleProductPage = () => {
     e.preventDefault()
     
     axios.post(
-      `http://letto-ecommerce.herokuapp.com/api/products/review/${id}`,
+      `http://127.0.0.1:8000/api/products/review/${id}`,
       {'rating':input.rating,'comment':input.comment}
       ,{headers: {"Authorization" : "Bearer "+ userInfo.token}}
       ).then(

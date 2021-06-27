@@ -67,7 +67,7 @@ const Modal = () => {
   	const onSubmit=(e)=>{
 	    e.preventDefault()
 	    axios.post(
-	      `http://letto-ecommerce.herokuapp.com/products/addCsv`,
+	      `http://127.0.0.1:8000/api/products/addCsv`,
 	      {'columns':columns,'data':data},
 	      {headers: {"Authorization" : "Bearer "+ userInfo.token}}
 	      ).then(

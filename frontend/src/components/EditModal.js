@@ -35,7 +35,7 @@ const EditModal=({id,product})=>{
 	      		"Authorization" : "Bearer "+ userInfo.token},
 	      }	
   		axios.put(
-	      `http://letto-ecommerce.herokuapp.com/api/products/edit/${id}`,input,config
+	      `http://127.0.0.1:8000/api/products/edit/${id}`,input,config
 	      ).then(
 	        (res)=>{
 	          window.location.reload()
