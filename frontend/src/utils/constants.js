@@ -42,6 +42,6 @@ export const services = [
   },
 ]
 
-export const products_url = 'http://127.0.0.1:8000/api/products/'
+export const products_url = 'http://letto-ecommerce.herokuapp.com/api/products/'
 
-export const single_product_url = `http://127.0.0.1:8000/api/products/`
+export const single_product_url = `http://letto-ecommerce.herokuapp.com/api/products/`
