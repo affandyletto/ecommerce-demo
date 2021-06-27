@@ -42,6 +42,6 @@ export const services = [
   },
 ]
 
-export const products_url = '/api/products/'
+export const products_url = 'api/products'
 
-export const single_product_url = `/api/products/`
+export const single_product_url = `api/products/`
