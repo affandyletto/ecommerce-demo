@@ -15,8 +15,10 @@ import requests
 
 class GetProducts(APIView):
     def get(self, request, format=None):
+        print("getting products")
         products = Product.objects.all()
         serializer = ProductSerializer(products, many=True)
+        print("GOT THE PRODUCTS")
         return Response(serializer.data)
 
 
