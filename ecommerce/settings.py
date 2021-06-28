@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9tqqgcmxt^@7hsv6u3%y#*=%u(i93_xh$2q#)^+y64926==c5e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["letto-ecommerce.herokuapp.com"]
+ALLOWED_HOSTS = ["letto-ecommerce.herokuapp.com","127.0.0.1"]
 
 
 # Application definition
@@ -171,6 +171,7 @@ USE_TZ = True
 IMPORT_EXPORT_USE_TRANSACTIONS = True
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
 STATICFILES_DIRS =[
     BASE_DIR / 'static',
     BASE_DIR / 'frontend/build/static'
