@@ -74,7 +74,7 @@ class VerifyEmail(generics.GenericAPIView):
 			user=User.objects.get(id=payload['user_id'])
 			user.is_active=True
 			user.save()
-			return redirect("/")
+			return redirect("/#/login")
 		except jwt.ExpiredSignatureError as e:
 			return Response({'error':"Activation Expired"}, status=status.HTTP_400_BAD_REQUEST)
 
