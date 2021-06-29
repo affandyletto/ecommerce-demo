@@ -5,8 +5,6 @@ from .resources import *
 
 # Register your models here.
 @admin.register(Product)
-@admin.register(Order)
-@admin.register(OrderItem)
 @admin.register(Image)
 @admin.register(Review)
 @admin.register(Color)
